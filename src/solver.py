@@ -50,7 +50,7 @@ class Solver:
 
     def color_found_word(self, coordinates):
         for coords in coordinates:
-            lbl = Label(self.window, text=self.wordsearch[coords[0]][coords[1]], padx=10, pady=10, fg="red", font=('Arial', 25))
+            lbl = Label(self.window, text=self.wordsearch[coords[0]][coords[1]], padx=10, pady=10, fg="red", font=('Arial', 15))
             lbl.grid(row=coords[0], column=coords[1])
 
     def solve(self):
